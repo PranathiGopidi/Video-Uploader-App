@@ -1,7 +1,18 @@
 .uploader-container{
   margin: 10px;
+  background: rgba(255, 255, 255, 0.0);
 }
+.container .jumbotron{
+  background: rgba(255, 255, 255, 0.2);
+}
+.font{
+  font-weight: bolder;
+  color: rgb(184, 77, 103);
+  font-style: italic;
+  font-family: cursive;
 
+}
+  
 .uploader-progress-bar{
   margin-bottom: 15px;
 }
@@ -13,6 +24,8 @@
 
 body{
   background-image: url("img.jpg");
+  background-size: 100%;
+  
 }
 
 #video-container{

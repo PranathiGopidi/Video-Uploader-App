@@ -4,11 +4,11 @@ angular.module("application", []).component("uploader",{
 });
 
 function uploaderController($scope){      
-    $scope.title = 'AngularJS - Upload videos with Blueimp';
+    $scope.title = 'Video Upload App';
     $scope.message = '';    
     var urlWistia = 'https://upload.wistia.com/?api_password=';
     var apiPassword = '8e70ebc97a08291f034510f57ca45fa0a7766f6b7f74e7c90f1e82bca87513d3';
-    $scope.cssprogress = { 'width' : '0%', background : '#ff7400'};    
+    $scope.cssprogress = { 'width' : '0%', background : '#eaff00'};    
   
     angular.element('#fileupload').fileupload({                        
         url : urlWistia + apiPassword,        
@@ -16,13 +16,13 @@ function uploaderController($scope){
             data.submit();
         },
         start: function(e){            
-            $scope.cssprogress = {'width' : '0%', background : '#ff7400'};                        
+            $scope.cssprogress = {'width' : '0%', background : '#eaff00'};                        
             $scope.message = 'Uploading file...';         
             $scope.$apply();
         },
         progress: function (e, data) {          
             var progress = parseInt(data.loaded / data.total * 100, 10);            
-            $scope.cssprogress = {'width' : progress + '%', background : '#ff7400'};
+            $scope.cssprogress = {'width' : progress + '%', background : '#eaff00'};
             $scope.$apply();
         },
         done: function (e, data) {                                                                
