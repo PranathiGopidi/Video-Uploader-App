@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="application">
+  <head>
+    <title>Video uploader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/index.css">       
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <!-- Bootstrap - Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!---->
+    <!-- Generic page styles -->
+    <link rel="stylesheet" href="https://blueimp.github.io/jQuery-File-Upload/css/style.css">
+    <!-- blueimp Gallery styles -->
+    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+    <link rel="stylesheet" href="https://blueimp.github.io/jQuery-File-Upload/css/jquery.fileupload.css">
+    <link rel="stylesheet" href="https://blueimp.github.io/jQuery-File-Upload/css/jquery.fileupload-ui.css">
+    <!--Wistia Video Player API-->
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    <script src="app/uploader.js"></script>      
+  <script src="https://blueimp.github.io/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+    <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+   <script src="https://blueimp.github.io/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+    <!-- The basic File Upload plugin -->
+   <script src="https://blueimp.github.io/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+   </head>
+  <body>    
+    <div class="container">       
+      <uploader></uploader>      
+    </div>        
+  </body>
+</html>

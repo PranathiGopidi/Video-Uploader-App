@@ -1,0 +1,27 @@
+.uploader-container{
+  margin: 10px;
+}
+
+.uploader-progress-bar{
+  margin-bottom: 15px;
+}
+
+.bar {
+  height: 18px;  
+  border-radius: 4px;  
+}
+
+body{
+  background-image: url("img.jpg");
+}
+
+#video-container{
+  margin-top: 20px;
+}
+
+.video-item{
+  float: left;
+  margin: 10px;
+  width: 260px;
+  height: 146px;
+}

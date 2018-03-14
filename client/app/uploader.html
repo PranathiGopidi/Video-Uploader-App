@@ -1,0 +1,16 @@
+<div class="jumbotron text-center uploader-container">
+    <div class="row uploader-container">
+        <h2><span>{{title}}</span></h2>    
+        <div id="progress" class="uploader-progress-bar">
+            <div class="bar" ng-style="cssprogress"></div>
+        </div>
+        <span class="btn btn-success fileinput-button pull-left">
+            <i class="glyphicon glyphicon-plus"></i>
+            <span>Add file...</span>
+            <input id="fileupload" type="file" name="files[]">
+        </span> 
+        <span id="message-container" class="pull-right .myclass">{{message}}</span>  
+    </div>         
+    <div class="row" id="video-container">           
+    </div>         
+</div>

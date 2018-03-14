@@ -1,0 +1,25 @@
+{
+  "name": "node-app",
+  "version": "0.0.0",
+  "start": "node server.js",
+  "description": "Node app to serve angular video uploader.",
+  "main": "server.js",
+  "author": "Marcos",
+  "dependencies": {
+    "angular": "~1.6.6",
+    "angular-mocks": "^1.6.6",
+    "angular-ui-router": "^0.4.3",
+    "body-parser": "~1.5.2",
+    "express": "~4.7.2",
+    "jasmine-core": "^2.4.1",
+    "jquery": "^3.2.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.1"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  }
+}
